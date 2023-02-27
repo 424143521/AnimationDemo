@@ -18,6 +18,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
+            <View
+                android:id="@+id/viewAccelerate"
+                android:background="@color/material_dynamic_primary20"
+                android:layout_margin="8dp"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+            <View
+                android:id="@+id/viewLinear"
+                android:alpha="0.5"
+                android:background="@color/material_dynamic_primary20"
+                android:layout_margin="8dp"
+                android:onClick="onClick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
