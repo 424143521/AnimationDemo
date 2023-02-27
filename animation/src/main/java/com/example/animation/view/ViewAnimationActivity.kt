@@ -61,6 +61,8 @@ class ViewAnimationActivity : AppCompatActivity() {
                 animationLinear.interpolator = LinearInterpolator()
                 animationAccelerate.interpolator = AccelerateInterpolator()
 
+
+
                 viewLinear.startAnimation(animationLinear)
                 viewAccelerate.startAnimation(animationAccelerate)
 
