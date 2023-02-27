@@ -13,7 +13,17 @@ class ViewAnimationActivity : AppCompatActivity() {
     }
 
     fun onClick(view: View) {
-        val animation = AnimationUtils.loadAnimation(this, R.anim.alpha)
-        view.startAnimation(animation)
+        when(view.id){
+            R.id.viewAlphaAnimation ->{
+                val animation = AnimationUtils.loadAnimation(this, R.anim.alpha)
+                view.startAnimation(animation)
+            }
+
+            R.id.viewScaleAnimation ->{
+                val animation = AnimationUtils.loadAnimation(this, R.anim.scaie)
+                view.startAnimation(animation)
+            }
+        }
+
     }
 }
