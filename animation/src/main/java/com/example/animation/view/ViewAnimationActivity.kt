@@ -20,11 +20,19 @@ class ViewAnimationActivity : AppCompatActivity() {
             }
 
             R.id.viewScaleAnimation ->{
-                val animation = AnimationUtils.loadAnimation(this, R.anim.scaie)
+                val animation = AnimationUtils.loadAnimation(this, R.anim.scale)
                 view.startAnimation(animation)
             }
             R.id.viewTranslateAnimation ->{
                 val animation = AnimationUtils.loadAnimation(this, R.anim.translate)
+                view.startAnimation(animation)
+            }
+            R.id.viewRotateAnimation ->{
+                val animation = AnimationUtils.loadAnimation(this, R.anim.rotate)
+                view.startAnimation(animation)
+            }
+            R.id.viewSetAnimation ->{
+                val animation = AnimationUtils.loadAnimation(this, R.anim.set)
                 view.startAnimation(animation)
             }
         }

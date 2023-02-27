@@ -22,28 +22,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/viewAlphaAnimation"
-                android:text="Alpha"
+                android:textSize="20sp"
                 android:onClick="onClick"
-                style="@style/AnimationTextView" />
-
-
+                android:text="Alpha"
+                style="@style/style" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/viewScaleAnimation"
-                android:layout_gravity="center"
-                android:text="Alpha"
+                android:textSize="20sp"
                 android:onClick="onClick"
-                style="@style/AnimationTextView" />
-
+                android:text="Scale"
+                style="@style/style" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/viewTranslateAnimation"
-                android:layout_marginTop="20dp"
-                android:text="Translate"
+                android:textSize="20sp"
                 android:onClick="onClick"
-                style="@style/AnimationTextView" />
+                android:text="Translate"
+                style="@style/style" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="onClick"
+                android:id="@+id/viewRotateAnimation"
+                android:text="Rotate"
+                style="@style/style" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:onClick="onClick"
+               android:id="@+id/viewSetAnimation"
+                android:text="Set"
+                style="@style/style" />
+
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="200dp"/>
