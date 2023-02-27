@@ -23,6 +23,10 @@ class ViewAnimationActivity : AppCompatActivity() {
                 val animation = AnimationUtils.loadAnimation(this, R.anim.scaie)
                 view.startAnimation(animation)
             }
+            R.id.viewTranslateAnimation ->{
+                val animation = AnimationUtils.loadAnimation(this, R.anim.translate)
+                view.startAnimation(animation)
+            }
         }
 
     }
