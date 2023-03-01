@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.Button
 import com.example.animation.R
 
-class FrameAnimationActivity : AppCompatActivity(){
+class FrameAnimationActivity : AppCompatActivity() {
 
     //创建Drawable容器
     lateinit var animationDrawable: AnimationDrawable
@@ -30,8 +30,6 @@ class FrameAnimationActivity : AppCompatActivity(){
         animationDrawable.isOneShot = true
 
     }
-
-
 
 
 }

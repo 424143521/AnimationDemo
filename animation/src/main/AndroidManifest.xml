@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomView">
         <activity
-            android:name=".view.ViewAnimationActivity"
+            android:name=".property.PropertyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +21,17 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".frame.FrameAnimationActivity"
+            android:name=".view.ViewAnimationActivity"
             android:exported="true">
 
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".frame.FrameAnimationActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
