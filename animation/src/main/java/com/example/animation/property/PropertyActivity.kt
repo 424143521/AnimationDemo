@@ -1,12 +1,11 @@
 package com.example.animation.property
 
-import android.animation.AnimatorInflater
-import android.animation.ObjectAnimator
-import android.animation.ValueAnimator
+import android.animation.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.animation.AnimationSet
 import android.view.animation.LinearInterpolator
 import com.example.animation.R
 import kotlin.math.absoluteValue
@@ -54,6 +53,27 @@ class PropertyActivity : AppCompatActivity() {
                 view.animate().translationX(500f).setDuration(1000).start()
             }
 
+            R.id.button3 -> {
+                val rotationAnimator = ObjectAnimator.ofFloat(view, "rotation", 0f, 720f)
+                rotationAnimator.setDuration(1000)
+
+                val xAnimator = ObjectAnimator.ofFloat(view, "x", 0f, 500f)
+                xAnimator.setDuration(1000)
+
+                val animatorSet = AnimatorSet()
+                //同时播放
+//                animatorSet.playTogether(alphaAnimator,xAnimator)
+
+                //按顺序播放
+                animatorSet.playSequentially(rotationAnimator,xAnimator)
+                animatorSet.start()
+
+                //第二种方式setStartDelay(1000)延迟
+                //view.animate().rotation(720f).setDuration(1000).start()
+                //view.animate().translationX(500f).setDuration(1000).setStartDelay(1000).start()
+
+
+            }
 
         }
     }
