@@ -49,6 +49,11 @@ class PropertyActivity : AppCompatActivity() {
 
             }
 
+            //ViewPropertyAnimator
+            R.id.button2 -> {
+                view.animate().translationX(500f).setDuration(1000).start()
+            }
+
 
         }
     }
