@@ -13,7 +13,7 @@ class FrameAnimationActivity : AppCompatActivity() {
     lateinit var animationDrawable: AnimationDrawable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.layout_frame)
 
         val view = findViewById<View>(R.id.view)
         animationDrawable = view.background as AnimationDrawable

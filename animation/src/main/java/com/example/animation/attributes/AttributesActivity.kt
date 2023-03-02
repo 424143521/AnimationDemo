@@ -1,16 +1,14 @@
-package com.example.animation.property
+package com.example.animation.attributes
 
 import android.animation.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.view.animation.AnimationSet
 import android.view.animation.LinearInterpolator
 import com.example.animation.R
-import kotlin.math.absoluteValue
 
-class PropertyActivity : AppCompatActivity() {
+class AttributesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_property)

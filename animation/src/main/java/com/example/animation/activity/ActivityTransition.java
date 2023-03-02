@@ -12,7 +12,7 @@ import android.view.View;
 import com.example.animation.R;
 
 
-public class FirstActivity extends Activity {
+public class ActivityTransition extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

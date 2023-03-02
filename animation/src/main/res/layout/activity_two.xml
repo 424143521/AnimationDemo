@@ -5,7 +5,7 @@
     android:id="@+id/second_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".transition_animation.TwoActivity">
+    tools:context=".transition_animation.TransitionActivity">
 
     <FrameLayout
         android:id="@+id/scene_root"

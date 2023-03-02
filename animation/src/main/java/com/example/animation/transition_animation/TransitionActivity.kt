@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.example.animation.R
 
 //转场动画
-class TwoActivity : AppCompatActivity() {
+class TransitionActivity : AppCompatActivity() {
 
     lateinit var mInfoScene:Scene
     override fun onCreate(savedInstanceState: Bundle?) {
